@@ -2,13 +2,6 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-<<<<<<< HEAD
-## Build generated
-build/
-DerivedData/
-
-## Various settings
-=======
 ## User settings
 xcuserdata/
 
@@ -20,7 +13,6 @@ xcuserdata/
 build/
 DerivedData/
 *.moved-aside
->>>>>>> cdb8844a4be00636a9211e1000392dafd99d6008
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -29,7 +21,6 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-<<<<<<< HEAD
 xcuserdata/
 .DS_Store
 
@@ -40,13 +31,6 @@ xcuserdata/
 
 ## Obj-C/Swift specific
 *.hmap
-=======
-
-## Obj-C/Swift specific
-*.hmap
-
-## App packaging
->>>>>>> cdb8844a4be00636a9211e1000392dafd99d6008
 *.ipa
 *.dSYM.zip
 *.dSYM
@@ -55,27 +39,18 @@ xcuserdata/
 timeline.xctimeline
 playground.xcworkspace
 
-<<<<<<< HEAD
-### AppCode ###
-.idea
-
-=======
->>>>>>> cdb8844a4be00636a9211e1000392dafd99d6008
 # Swift Package Manager
 #
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
 # Packages/
 # Package.pins
-<<<<<<< HEAD
-=======
 # Package.resolved
-# *.xcodeproj
+*.xcodeproj
 #
 # Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
 # hence it is not needed unless you have added a package configuration file to your project
 # .swiftpm
 
->>>>>>> cdb8844a4be00636a9211e1000392dafd99d6008
 .build/
 
 # CocoaPods
@@ -84,38 +59,16 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-<<<<<<< HEAD
-Pods/
-
-# xCodegen
-#
-solutions/devsprint-bruno-ramos-4/*.xcodeproj/*
-solutions/devsprint-bruno-ramos-4/*.xcworkspace/*
-# Pedro Menezes
-solutions/devsprint-pedro-menezes-1/*.xcodeproj/*
-solutions/devsprint-pedro-menezes-1/*.xcworkspace/*
-=======
 # Pods/
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 # *.xcworkspace
->>>>>>> cdb8844a4be00636a9211e1000392dafd99d6008
 
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-<<<<<<< HEAD
-Carthage/Build
-
-## XCodegen
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-=======
 Carthage/Build/
 
 # Accio dependency management
@@ -126,13 +79,11 @@ Dependencies/
 #
 # It is recommended to not store the screenshots in the git repo.
 # Instead, use fastlane to re-generate the screenshots whenever they are needed.
->>>>>>> cdb8844a4be00636a9211e1000392dafd99d6008
 # For more information about the recommended setup visit:
 # https://docs.fastlane.tools/best-practices/source-control/#source-control
 
 fastlane/report.xml
 fastlane/Preview.html
-<<<<<<< HEAD
 fastlane/screenshots
 fastlane/test_output
 
@@ -189,33 +140,9 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
-### Xcode Patch ###
-solutions/devsprint-bruno-ramos-4/*.xcodeproj/*
-solutions/devsprint-bruno-ramos-4/*.xcworkspace/*
-solutions/devsprint-julio-fernandes-5/*.xcodeproj/*
-solutions/devsprint-julio-fernandes-5/!*.xcodeproj/project.pbxproj
-solutions/devsprint-julio-fernandes-5/!*.xcodeproj/xcshareddata/
-solutions/devsprint-julio-fernandes-5/!*.xcworkspace/contents.xcworkspacedata
-/*.gcno
-
-### Projects ###
-solutions/devsprint-julio-fernandes-5/*.xcodeproj
-solutions/devsprint-julio-fernandes-5/*.xcworkspace
-
 ### Tuist derived files ###
 graph.dot
 Derived/
 
 ### Tuist managed dependencies ###
 **/Tuist/Dependencies
-=======
-fastlane/screenshots/**/*.png
-fastlane/test_output
-
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
-iOSInjectionProject/
->>>>>>> cdb8844a4be00636a9211e1000392dafd99d6008
