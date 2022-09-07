@@ -18,8 +18,6 @@ settings:
 
 options:
   bundleIdPrefix: br.com.tonon
-  xcodeVersion: "13.4.1"
-  createIntermediateGroups: true
   deploymentTarget:
     iOS: "14.0"
 
@@ -35,12 +33,18 @@ targets:
     sources:
       - path: cine-room
 
-    settings:
-      PRODUCT_BUNDLE_IDENTIFIER: cine-room
-      INFOPLIST_FILE: cine-room/Resources/Info.plist
-      CODE_SIGN_STYLE: "Manual"
-      DEVELOPMENT_TEAM: ""
-      PROVISIONING_PROFILE: "Wildcard"
+    info:
+      path: cine-room/Resources/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: []
+        NSAppTransportSecurity: true
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
       
     postCompileScripts:
       - script: |
@@ -51,4 +55,3 @@ targets:
                   echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
                 fi
         name: Run SwiftLint
-#==================================================================================================
